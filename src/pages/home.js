@@ -19,7 +19,7 @@ const Home = () => {
       >
         <div className={`${modal ? 'invisible' : 'w-screen h-screen grid'}`}>
           <h1 className='text-4xl font-extrabold text-center self-end'>
-            Welcome To S-Seva
+            Welcome To Empower
           </h1>
           <div
             className={`absolute ease-in duration-300 top-1/2 -translate-x-1/2 -translate-y-1/2 visible ' ${
