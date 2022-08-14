@@ -9,19 +9,16 @@ const Navbar = () => {
         </div>
         <div class='hidden md:flex space-x-8'>
           <a href='#' class='hover:text-gray-400'>
-            Pricing
+            Support
           </a>
           <a href='#' class='hover:text-gray-400'>
-            About
-          </a>
-          <a href='#' class='hover:text-gray-400'>
-            Products
-          </a>
-          <a href='#' class='hover:text-gray-400'>
-            Careers
+            Courses
           </a>
           <a href='#' class='hover:text-gray-400'>
             Community
+          </a>
+          <a href='#' class='hover:text-gray-400'>
+            About
           </a>
         </div>
         <a

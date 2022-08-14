@@ -4,7 +4,7 @@ import Footer from '../components/footer';
 import { Slide } from 'react-slideshow-image';
 import { useLocation } from 'react-router-dom';
 import 'react-slideshow-image/dist/styles.css';
-
+import { FaQuoteLeft } from 'react-icons/fa';
 const Landing = () => {
   const slideImages = [
     {
@@ -46,6 +46,13 @@ const Landing = () => {
         <h2>Name: Atharv Gulati</h2>
         <h2>Email:ssevathebest22@gmail.com</h2>
         <h2>Location:Maharahtra, India</h2>
+      </div>
+      <div className='relative w-80 h-80 bg-yellow-400 rounded-full p-10 mx-auto mt-10'>
+        <FaQuoteLeft className='absolute text-4xl opacity-40 top-24 -translate-x-full -translate-y-2'></FaQuoteLeft>
+        <h2 className=' mt-10 absolute top-1/2 -translate-y-20 max-w-sm  -translate-x-5 text-center'>
+          If you want something said, ask a man; if you want something done, ask
+          a woman.
+        </h2>
       </div>
       <Footer />
     </>

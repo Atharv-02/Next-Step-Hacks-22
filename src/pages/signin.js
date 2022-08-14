@@ -13,7 +13,7 @@ const SignIn = ({ person, setPerson }) => {
   };
   return (
     <div
-      className='bg-red-400 opacity-60 p-6 rounded-lg border-green-900 border-8'
+      className='bg-red-700 opacity-60 p-6 rounded-lg border-green-900 border-8'
       style={{ width: '50vw' }}
     >
       <h1 className='text-3xl text-center '>Sign Up</h1>
@@ -34,8 +34,8 @@ const SignIn = ({ person, setPerson }) => {
             className='rounded-lg p-3 flex border-transparent bg-white/30 dark:bg-black/30'
             type='email'
             name='email'
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className='flex flex-col py-2'>
