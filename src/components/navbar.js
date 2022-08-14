@@ -1,11 +1,11 @@
 import React from 'react';
-
+import img from '../images/Logo.png';
 const Navbar = () => {
   return (
     <nav class='reletive  bg-red-300 mx-auto p-6'>
       <div class='flex items-center justify-between'>
         <div class='pt-2'>
-          <img src='./img/logo.svg' alt='' />
+          <img src={img} alt='' className='w-12 -my-2' />
         </div>
         <div class='hidden md:flex space-x-8'>
           <a href='#' class='hover:text-gray-400'>

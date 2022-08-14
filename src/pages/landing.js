@@ -5,14 +5,18 @@ import { Slide } from 'react-slideshow-image';
 import { useLocation } from 'react-router-dom';
 import 'react-slideshow-image/dist/styles.css';
 import { FaQuoteLeft } from 'react-icons/fa';
+import { FaQuoteRight } from 'react-icons/fa';
+import img1 from '../images/Widow-hero-img-1.jpeg';
+import img2 from '../images/Women-with-disability.jpeg';
+import img3 from '../images/Widow-hero-img-1.jpeg';
 const Landing = () => {
   const slideImages = [
     {
-      url: 'https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?cs=srgb&dl=pexels-min-an-853168.jpg&fm=jpg',
+      url: img1,
       caption: 'Slide 1',
     },
     {
-      url: 'https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?cs=srgb&dl=pexels-min-an-853168.jpg&fm=jpg',
+      url: img2,
       caption: 'Slide 2',
     },
     {
@@ -31,7 +35,7 @@ const Landing = () => {
                 <div className='each-slide' key={index}>
                   <div
                     style={{ backgroundImage: `url(${slideImage.url})` }}
-                    className='team-img rounded-xl shadow-xl h-[70vh] bg-cover bg-center mt-10 mx-2 '
+                    className='team-img rounded-xl shadow-xl h-[90vh] bg-cover bg-top mt-10 mx-2 border-2 border-blue-300 '
                   ></div>
                 </div>
               ))}
@@ -39,9 +43,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div>
-        <h1>Our Vision</h1>
-      </div>
+      <div></div>
       <div className=' bg-blue-200 w-1/2 rounded-md mx-auto p-10'>
         <h2>Name: Atharv Gulati</h2>
         <h2>Email:ssevathebest22@gmail.com</h2>
@@ -53,8 +55,8 @@ const Landing = () => {
           If you want something said, ask a man; if you want something done, ask
           a woman.
         </h2>
+        <FaQuoteRight className='absolute text-4xl opacity-40 bottom-1/2 right-1/4 translate-y-12 -translate-x-4'></FaQuoteRight>
       </div>
-      <Footer />
     </>
   );
 };
